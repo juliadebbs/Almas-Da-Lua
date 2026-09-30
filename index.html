@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Almas da Lua | Velas Artesanais</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>☾ Almas da Lua</h1>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#loja">Nossas velas</a>
+            <a href="#sobre">Nossa essência</a>
+            <a href="#contato">Contato</a>
+           
+            <button class="botao-carrinho" onclick="abrirCarrinho()">
+        🛒 Carrinho
+        <span id="contador-carrinho">0</span>
+    </button>
+
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+        <p class="subtitulo">LUZ • MISTÉRIO • SERENIDADE</p>
+
+        <h2>Acenda sua paz interior.</h2>
+
+        <p>
+            Velas artesanais feitas para iluminar
+            seus momentos de paz, conexão e espiritualidade.
+        </p>
+
+        <a class="botao" href="#loja">
+            Descubra nossas velas
+        </a>
+    </section>
+
+    <section class="como-funciona">
+    <p class="subtitulo">SIMPLES E ESPECIAL</p>
+
+    <h2>Como funciona</h2>
+
+    <div class="passos">
+
+        <div class="passo">
+            <span>01</span>
+            <h3>Escolha sua vela</h3>
+            <p>
+                Encontre a vela que combina com seu momento.
+            </p>
+        </div>
+
+        <div class="passo">
+            <span>02</span>
+            <h3>Adicione ao carrinho</h3>
+            <p>
+                Monte seu pedido com as velas que deseja.
+            </p>
+        </div>
+
+        <div class="passo">
+            <span>03</span>
+            <h3>Finalize pelo WhatsApp</h3>
+            <p>
+                Envie seu pedido e combine os detalhes com a loja.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="beneficios">
+    <p class="subtitulo">FEITO COM CARINHO</p>
+
+    <h2>Por que escolher a Almas da Lua?</h2>
+
+    <div class="beneficios-lista">
+
+        <div class="beneficio">
+            <span>✦</span>
+            <h3>Feitas à mão</h3>
+            <p>
+                Cada vela é produzida artesanalmente,
+                com atenção a cada detalhe.
+            </p>
+        </div>
+
+        <div class="beneficio">
+            <span>☾</span>
+            <h3>Peças especiais</h3>
+            <p>
+                Velas pensadas para trazer personalidade
+                e aconchego aos seus momentos.
+            </p>
+        </div>
+
+        <div class="beneficio">
+            <span>♡</span>
+            <h3>Feitas com carinho</h3>
+            <p>
+                Cada pedido é preparado com cuidado
+                para chegar até você com todo o encanto.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+    <section class="loja" id="loja">
+
+        <p class="subtitulo">FEITAS À MÃO, COM ALMA</p>
+
+    <h2>Nossas velas</h2>
+
+    <p class="descricao-loja">
+        Cada vela é única, assim como o seu momento.
+        Encontre aquela que combina com sua essência.
+    </p>
+
+    <div class="produtos">
+
+        <article class="produto">
+     <img src="imagens/Vela-Lua.png" alt="Vela Lua Mística">
+
+            <h3>Vela Lua Mística</h3>
+
+            <p>Uma lua encantada para seus momentos de introspecção.</p>
+
+            <strong>R$ 35,00</strong>
+
+            <button onclick="adicionar('Vela Lua Mística', 35)">
+                ♡ Adicionar ao carrinho
+            </button>
+        </article>
+
+        <article class="produto">
+            <img src="imagens/Vela-Flor.png" alt="Vela Flor Lunar">
+
+            <h3>Vela Flor Lunar</h3>
+
+            <p>Uma flor delicada que ilumina seu cantinho especial.</p>
+
+            <strong>R$ 29,90</strong>
+
+            <button onclick="adicionar('Vela Flor Lunar', 29.90)">
+                ♡ Adicionar ao carrinho
+            </button>
+        </article>
+
+        <article class="produto">
+            <img src="imagens/Vela-Gotica.png" alt="Vela Noite Serena">
+            <h3>Vela Noite Serena</h3>
+
+            <p>Detalhes místicos para criar uma atmosfera acolhedora.</p>
+
+            <strong>R$ 39,90</strong>
+
+            <button onclick="adicionar('Vela Noite Serena', 39.90)">
+                ♡ Adicionar ao carrinho
+            </button>
+        </article>
+
+        <article class="produto">
+            <img src="imagens/vela-equilibrio.png" alt="Vela Equilíbrio">
+               
+            <h3>Vela Equilíbrio</h3>
+
+            <p>Um formato moderno para decorar seu espaço de paz.</p>
+
+            <strong>R$ 28,90</strong>
+
+            <button onclick="adicionar('Vela Equilíbrio', 28.90)">
+                ♡ Adicionar ao carrinho
+            </button>
+        </article>
+
+        <article class="produto">
+            <img src="imagens/vela-amor.png" alt="Vela Amor Lunar">
+
+            <h3>Vela Amor Lunar</h3>
+
+            <p>Um coração delicado para presentear ou decorar.</p>
+
+            <strong>R$ 32,90</strong>
+
+            <button onclick="adicionar('Vela Amor Lunar', 32.90)">
+                ♡ Adicionar ao carrinho
+            </button>
+        </article>
+
+        <article class="produto">
+           <img src="imagens/vela-eclipse.png" alt="Vela Eclipse">
+            <h3>Vela Eclipse</h3>
+
+            <p>Uma lua crescente inspirada na magia do universo.</p>
+
+            <strong>R$ 34,90</strong>
+
+            <button onclick="adicionar('Vela Eclipse', 34.90)">
+                ♡ Adicionar ao carrinho
+            </button>
+        </article>
+
+    </div>
+
+</section>
+
+<div id="carrinho" class="carrinho">
+
+    <div class="carrinho-topo">
+        <h2>Seu carrinho 🌙</h2>
+
+        <button onclick="fecharCarrinho()">×</button>
+    </div>
+
+    <div id="lista-carrinho"></div>
+
+    <div class="carrinho-total">
+        <span>Total:</span>
+        <strong id="total-carrinho">R$ 0,00</strong>
+    </div>
+
+    <button class="finalizar" onclick="finalizarCompra()">
+        Finalizar pedido
+    </button>
+
+</div>
+
+</section>
+
+<section class="sobre" id="sobre">
+    <div class="sobre-conteudo">
+        <p class="subtitulo">NOSSA ESSÊNCIA</p>
+
+        <h2>Feitas para iluminar momentos.</h2>
+
+        <p>
+            Na Almas da Lua, cada vela é feita artesanalmente
+            com carinho e intenção. Criamos peças que unem luz,
+            beleza e tranquilidade para transformar pequenos
+            momentos em experiências especiais.
+        </p>
+
+        <p>
+            Acenda uma vela, desacelere e permita que sua própria
+            luz encontre espaço para brilhar.
+        </p>
+    </div>
+</section>
+
+<section class="contato" id="contato">
+    <div class="contato-conteudo">
+        <p class="subtitulo">FALE CONOSCO</p>
+
+        <h2>Entre em contato</h2>
+
+        <p>
+            Quer saber mais sobre nossas velas ou fazer um pedido?
+            Estamos esperando sua mensagem. 🌙
+        </p>
+
+        <a
+            class="botao-contato"
+            href="https://wa.me/5561982228139"
+            target="_blank"
+        >
+            Falar pelo WhatsApp
+        </a>
+    </div>
+</section>
+
+
+<footer class="rodape">
+    <h3>Almas da Lua</h3>
+
+    <p>Velas artesanais feitas para iluminar seus momentos.</p>
+
+    <div class="rodape-links">
+        <a href="#loja">Nossas velas</a>
+        <a href="#sobre">Nossa essência</a>
+        <a href="#contato">Contato</a>
+    </div>
+
+    <div class="rodape-contato">
+    <a href="https://wa.me/5561982228139" target="_blank">
+        WhatsApp
+    </a>
+</div>
+
+    <p class="copyright">
+        © 2026 Almas da Lua — Todos os direitos reservados.
+    </p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
