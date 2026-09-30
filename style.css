@@ -696,3 +696,128 @@ footer {
         max-width: 450px;
     }
 }
+
+/* =========================
+   NOVA IDENTIDADE DA MARCA
+========================= */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+
+.logo img {
+    width: 95px;
+    height: 95px;
+    object-fit: contain;
+    display: block;
+}
+
+.logo img {
+    width: 95px;
+    height: 95px;
+    object-fit: contain;
+    display: block;
+}
+
+.logo-texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-texto h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #eadcf2;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.logo-texto span {
+    margin-top: 4px;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #a991b8;
+}
+
+
+/* símbolo lunar */
+
+.simbolo-lua {
+    position: relative;
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #76558b;
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 15px rgba(180, 140, 205, 0.12),
+        inset 0 0 12px rgba(180, 140, 205, 0.05);
+}
+
+
+/* lua crescente */
+
+.lua-crescente {
+    position: relative;
+    width: 22px;
+    height: 22px;
+
+    border: 2px solid #d9c0e6;
+    border-radius: 50%;
+}
+
+
+/* recorte da lua */
+
+.lua-crescente::after {
+    content: "";
+
+    position: absolute;
+
+    width: 20px;
+    height: 20px;
+
+    top: -4px;
+    left: 6px;
+
+    border-radius: 50%;
+
+    background: #100b15;
+}
+
+
+/* pequeno detalhe ornamental */
+
+.ponto-lua {
+    position: absolute;
+
+    width: 4px;
+    height: 4px;
+
+    border-radius: 50%;
+
+    background: #d9c0e6;
+
+    top: 9px;
+    right: 8px;
+
+    box-shadow:
+        0 0 8px rgba(217, 192, 230, 0.7);
+}
